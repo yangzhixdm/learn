@@ -1,2 +1,2 @@
-# blogs
-blogs
+# Blog
+> 文章记录
