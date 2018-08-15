@@ -4,6 +4,8 @@
 
 > [微任务与宏任务](https://juejin.im/post/5b73d7a6518825610072b42b)
 
+> [bind方法](https://blog.csdn.net/daimomo000/article/details/72897035)
+
 > promise
 
 > http请求
