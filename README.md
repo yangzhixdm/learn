@@ -2,6 +2,8 @@
 
 > [sublime text 配置](https://github.com/helloyangzhi/blogs/issues/1)
 
+> [微任务与宏任务](https://juejin.im/post/5b73d7a6518825610072b42b)
+
 > promise
 
 > http请求
