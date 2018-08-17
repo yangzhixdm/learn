@@ -6,6 +6,10 @@
 
 > [bind方法](https://blog.csdn.net/daimomo000/article/details/72897035)
 
+> [google code style](https://github.com/google/styleguide)
+
+> [airbnb](https://github.com/airbnb/javascript)
+
 > promise
 
 > http请求
