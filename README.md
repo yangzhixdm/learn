@@ -10,7 +10,7 @@
 
 > [airbnb](https://github.com/airbnb/javascript)
 
-> [vuex中actions与mutations](https://github.com/helloyangzhi/blogs/issues/2)
+> [Mastering Vuex — Zero to Hero](https://github.com/helloyangzhi/blogs/issues/2)
 
 > promise
 
