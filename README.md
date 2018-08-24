@@ -14,6 +14,8 @@
 
 > [Presentational and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
 
+> [::before vs :before](https://css-tricks.com/to-double-color-or-not-do-double-colon/)
+
 > promise
 
 > http请求
