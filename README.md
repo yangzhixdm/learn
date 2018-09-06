@@ -16,7 +16,7 @@
 
 > [::before vs :before](https://css-tricks.com/to-double-color-or-not-do-double-colon/)
 
-> [关于https](https://github.com/helloyangzhi/learn/issues/4)
+> [关于https的几个问题](https://github.com/helloyangzhi/learn/issues/4)
 
 > promise
 
