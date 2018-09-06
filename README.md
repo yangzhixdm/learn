@@ -18,6 +18,8 @@
 
 > [关于https的几个问题](https://github.com/helloyangzhi/learn/issues/4)
 
+> [关于跨域的问题](https://github.com/helloyangzhi/learn/issues/5)
+
 > promise
 
 > http请求
