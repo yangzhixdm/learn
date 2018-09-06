@@ -22,6 +22,8 @@
 
 > [关于跨域的问题](https://github.com/helloyangzhi/learn/issues/5)
 
+> [组件通信的一些想法](https://github.com/helloyangzhi/learn/issues/6)
+
 > promise
 
 > http请求
