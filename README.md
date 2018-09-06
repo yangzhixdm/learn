@@ -22,8 +22,6 @@
 
 > http请求
 
-> https
-
 > vue diff
 
 > nginx
