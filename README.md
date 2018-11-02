@@ -24,6 +24,8 @@
 
 > [组件通信的一些想法](https://github.com/helloyangzhi/learn/issues/6)
 
+> [关于Flux中的actoin与dispatch ](https://github.com/helloyangzhi/learn/issues/7)
+
 > promise
 
 > http请求
