@@ -28,7 +28,7 @@
 
 > [redux与react-redux笔记](https://github.com/helloyangzhi/learn/issues/8)
 
-> promise
+> [Promise中的resolve与reject回调问题](https://github.com/helloyangzhi/learn/issues/9)
 
 > http请求
 
