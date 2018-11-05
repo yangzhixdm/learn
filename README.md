@@ -26,6 +26,8 @@
 
 > [关于Flux中的actoin与dispatch ](https://github.com/helloyangzhi/learn/issues/7)
 
+> [redux与react-redux笔记](https://github.com/helloyangzhi/learn/issues/8)
+
 > promise
 
 > http请求
