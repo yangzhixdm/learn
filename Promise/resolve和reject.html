@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise Demo1</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //demo1
+        //1 resolve和reject是两个内部方法，是Promise内部实现的并传递给promiseHandler
+        //2 resolve和reject方法，会异步执行then中传递过来的回调函数
+        
+        function promiseHandler(resolve, reject) {
+            console.log('test');
+            console.log(resolve);   //ƒ () { [native code] }
+            resolve();
+            reject();
+        }
+
+        var p1 = new Promise(promiseHandler);
+
+
+
+    </script>
+</body>
+</html>

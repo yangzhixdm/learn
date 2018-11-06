@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise Demo1</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //demo2
+        
+        //1 then中data参数的来源是resolve和reject传递过来的值
+
+        //2 then方法执行之后会返回一个新的 Promise对象
+
+        //3 resolve和reject方法的做了什么 ？
+
+        function promiseHandler(resolve, reject) {
+
+            //async 调用then 中的传递的resolve方法，也就是第一个参数
+            //并且把参数传递给该方法
+            //resolve会接收回调的return值，然后把它作为下一个then的reslove函数的参数
+
+            console.log('call promiseHandler');
+            resolve(2);
+        }
+
+        //想像一下resolve和then的实现
+
+        function then(reslove, reject){
+            //添加异步执行的回调方法
+
+            //之后会返回一个新的Promise实例
+            //并且这个实例并不是直接new一个之前的那个构造方法，
+            //否则里面的方法会重新再次被执行
+
+            return new Promise(function(reslove,reject){
+
+            });
+        }
+
+        function reslove(data){
+            //拿到需要执行的回调方法
+            const callback = getCallback();
+            //执行callback方法
+            const retVal = callback(data);
+
+            //发送下一个then方法的
+            sendNextThenMethod(retVal);
+        }
+
+        var p1 = new Promise(promiseHandler);
+
+        var p2 = p1.then(function(data){  
+            console.log("p1" + data);
+            return data;
+        });
+
+        console.log("直接p2 : ");
+        console.log(p2);
+
+
+        console.log(p1 === p2);     
+        //此处p1和 p2 是不同的对象，那么p2是怎么被造出来的呢？
+        //是再次执行了上面的方法？ 还是拷贝？ 还是其它方式？
+        //上面的打印只出现了一次，说明promiseHandler方法只被 执行了一次
+        //也就是说调用then方法中，没有再次调用promiseHandler方法
+
+        p2.then(function(data){
+            console.log("p2: " + data);
+        });
+
+
+        //那么，我再这里加一个判断，和参数，看看是否会有效果
+        //调整一下代码
+        function promiseHandler2(num) {
+            return new Promise(function(resolve, reject){
+
+                if(num == 3){
+                    resolve(num);
+                }else{
+                    reject(num);
+                }
+            });
+        }
+
+
+        //测试一下
+
+        var p3 = promiseHandler2(2);//如果此处为3，后面的then会被执行
+        //这里会调用一下 new Promise,然后得到一个 Prmose对象，可以考虑执行其then方法
+
+        var p4 = p3.then(function(data){
+            console.log("reslove p3:" + data);
+            return 4;//无论此处返回的是什么，后面的then都会执行resolve方法 ？ 这是为什么呢？
+        }, function(data){
+            console.log('reject p3:' + data);
+        });
+
+        p4.then(function(data){
+            console.log("resolve p4: " + data);
+        }, function(data){
+            console.log('reject p4:' + data);
+        });
+
+        //可以看到这里的p4是直接打印出来的，那么也就是没有执行上面所谓的判断;
+        //所以有一个问题需要考虑
+        //回到最开始的Promise的状态问题，一旦Promise的状态被改变之后，将无法被修改？
+        //第一个then会根据值来进行判断，是因为当里的promise的状态还没有被修改么？
+        //之后由于状态已经修改了，所有就有了之后的结果？
+
+
+        //那么如果在之后的then中再次手动触发其它promise呢 ？
+
+
+
+        //现在更加恐怖的问题来了,那这里第一个then的值不为3 的时候，触发了第一个then的reject方法，但是为什么会触发后面的then的resolve方法呢？
+        
+
+
+
+    </script>
+</body>
+</html>
