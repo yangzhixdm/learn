@@ -1,0 +1,31 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "description": "> [前端体系]()",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node openBrowser.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helloyangzhi/learn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helloyangzhi/learn/issues"
+  },
+  "homepage": "https://github.com/helloyangzhi/learn#readme",
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "opn": "^5.4.0"
+  },
+  "dependencies": {
+    "koa": "^2.6.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0"
+  }
+}
