@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+
+
+    <script type="text/javascript">
+        
+    
+    function creator(num) {
+
+        return new Promise(function(resolve, reject){
+            if(num > 2){
+                resolve(num);
+            }else{
+                reject(num);
+            }
+        });  
+    }
+
+
+    // creator(1).then(function(){
+    //     console.log('resolve');
+    // },function(){
+    //     throw Error('ddd');
+    // }).catch(function(){
+    //     console.log(' catch reject');
+    // });
+
+
+    creator(1).then(function(){
+        console.log('resolve');
+    },function(){
+        throw Error('ddd');
+    }).then(function(){
+        console.log('then resolve');
+    },function(){
+        console.log('then reject');
+    });
+
+    //第二个Promise中，如果没有报错，那么就会认为是resolved的状态。
+
+    </script>
+    
+</body>
+</html>
