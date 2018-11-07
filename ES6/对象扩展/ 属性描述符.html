@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性描述符</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let obj = { foo: 123};
+
+        Object.getOwnPropertyDescriptor(obj, 'foo');
+
+        // {
+        //     value: 123,
+        //     writable: true,
+        //     enumerable: true,
+        //     configurable: true
+        // }
+
+        //ES5 三个操作会忽略enumerable为false的属性
+        // for....in , Object.keys, JSON.stringify()
+
+        //ES6 增加了两个操作,会忽略enumerable为false的属性
+        //Object.assign, Reflect.enumerate
+
+        //另外，所有Class的原型方法都是不可枚举的
+    </script>
+</body>
+</html>

@@ -6,7 +6,89 @@
 </head>
 <body>
     <script type="text/javascript">
-        
+        //Object.assign 方法用来将源对象的所有可枚举属性复制到目标对象
+
+        var target = { a: 1};
+        var source = { b: 2};
+
+        var source2 = { c: 3};
+
+        Object.assign(target, source, source2);
+
+        console.log(target);
+
+        //如果目标对象与源对象有同名属性，或者多个源对象有同名属性，则后面的属性会覆盖前面的属性
+
+
+        //Object.assign只复制自身属性，不可枚举和继承来的属性不会被复制
+
+        var obj = Object.assign({b: 'c'},
+            Object.defineProperty({}, 'invisible', {
+                enumerable: false,
+                value: 'hello'
+            })
+        )
+
+        console.log(obj);
+        //{ b: c}
+
+
+        //为对象添加属性
+
+
+        class Point {
+            constructor(x, y) {
+                Object.assign(this, {x, y})
+            }
+        }
+
+
+        //为对象添加方法
+
+        Object.assign(SomeClass.prototype, {
+            someMethod(arg1, arg2) {
+
+            },
+            someMethod2(arg1, arg2) {
+
+            }
+        });
+
+        //克隆对象,只能克隆自身的值，不能克隆继承的值
+        function clone(origin) {
+            return Object.assign({}, origin);
+        }
+
+
+        function clone(origin) {
+            let originProto = Object.getOwnPrototypeOf(origin);
+            return Object.assgin(Object.create(originProto), origin);
+        }
+
+        //将多个对象合并到某个对象
+
+        const merge = (target, ...sources) => Object.assgin(target, ....source)
+
+        //将多个对象合并一个新对象
+
+        const merge = (...sources) => Object.assign({}, ...sources);
+
+
+        //为属性制定默认值
+
+        const DEFAULTS = {
+            logLevel: 0,
+            outputFormat: 'html'
+        }
+
+        function processContent(options) {
+            let options = Object.assign({}, DEFAULTS, options);
+        }
+
+
+
+
+
     </script>
 </body>
 </html>
