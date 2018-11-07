@@ -40,7 +40,7 @@
 
 > 作用域链
 
-> csrf
+> [csrf](https://github.com/helloyangzhi/learn/issues/11)
 
 > xss
 
