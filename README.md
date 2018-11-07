@@ -52,7 +52,7 @@
 
 > 箭头函数
 
-> hash与history的区别
+> [hash与history的区别](https://github.com/helloyangzhi/learn/issues/10)
 
 > 绑定事件删除问题
 
