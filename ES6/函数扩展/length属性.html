@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Length</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //函数length返回没有指定默认值的参数个数，也就是说，指定了默认值后，length属性将失真
+
+        console.log((function(a){}).length);
+        console.log((function(a = 5){}).length);
+        console.log((function(a, b, c = 5){}).length);
+
+        //length 属性值等于函数的参数个数减去指定了默认值的参数个数
+        //length 的含义就是：预传入的参数个数，rest参数不会计入length属性
+
+        (funtion(...args){}).length
+
+    </script>
+</body>
+</html>

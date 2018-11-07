@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性名表达式</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //JavaScript 语言定义对象的属性有两种方式
+        obj.foo = true;//使用标识符
+
+        obj['a' + 'bc'] = 123;//使用表达式
+
+        //但是如果使用字面量方式定义对象，在ES5中只能使用方式1
+
+        var obj = {
+            foo: true,
+            abc: 123
+        }
+
+        //ES6可以使用方式二
+
+        let propKey = 'foo';
+
+        let obj = {
+            [propKey]: true,
+            ['a' + 'bc']: 123
+        }
+
+        var lastWord = 'last word';
+
+        var a = {
+            'first word': 'hello',
+            [lastWord]: 'word'
+        }
+
+        a['first word']
+        a['lastWord']
+        a['last word']
+
+        //表达式也可以用于方法名
+
+        let obj = {
+            ['h' + 'ello']() {
+                return 'hi';
+            }
+        }
+
+        obj.hello();
+
+        //属性名表达式与简洁表示法不能同时使用，否则会报错
+
+    </script>
+</body>
+</html>

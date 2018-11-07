@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>默认值</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        //ES5
+        function log(x, y) {
+            y = y || 'world';
+            console.log(x ,y);
+        }        
+
+        log('hello');
+        log('hello', 'chain');
+        log('hello', '');
+
+        //ES6
+
+        function log(x, y = 'world') {
+            console.log(x,y);
+        }
+
+        log('hello');
+
+        function Point(x = 0, y = 0) {
+            this.x = x;
+            this.y = y;
+        }
+
+        var p = new Point();
+
+        console.log(p);
+
+        //参数变量是默认声明的，不能再用let或者const声明
+        function foo(x = 5) {
+            let x = 1;  //error
+            const x = 2; //error
+        }
+    </script>
+</body>
+</html>

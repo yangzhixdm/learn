@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作用域</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        //如果参数默认值是一个变量，则该变量所处的作用域与其他变量的作用域规则是一样的，既先当前函数的作用域，然后才是全局作用域
+        var x = 1;
+
+        function f(x, y = x) {
+            console.log(y);//此处的y就是获取x，然后这个x是获取的传入的x而不是全局的x
+        }
+
+        f(2);//2
+
+
+        //如果调用时函数作用域的内部的变量还没有生成，结果就会不一样
+        let t = 1;
+
+        function b(y = t){
+            let t = 2;
+            console.log(y);
+        }
+
+        b();
+
+        //如果函数A的参数默认值是函数B，那么由于函数的作用域是其声明时所在的作用域，函数B的作用域就不是函数A，而是全局作用域
+        let foo = 'outer';
+
+        function bar(func = x => foo) {
+            let foo = 'inner';
+            console.log(func()); //outer;
+        }
+
+        bar();
+
+
+        //应用
+
+        //利用参数默认值，可以指定某一个参数不得省略，如果省略就抛出一个错误
+
+        function throwIfMissing() {
+            throw new Error('Missing parameter');
+        }
+
+
+        function foo(mustBeProvided = throwIfMissing()) {
+            return mustBeProvided;
+        }
+
+        foo();
+
+        //Error: Missing parameter
+    </script>
+</body>
+</html>

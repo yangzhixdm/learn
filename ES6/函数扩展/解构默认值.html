@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解构默认值</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        //类型一
+        function foo({x, y = 5}) {
+            console.log(x, y);
+        }
+
+        foo({});
+        foo({x: 1});
+        foo({x: 1, y: 2});
+        foo(); //TypeError: cannot red property 'x' of undefined
+
+        //类型二
+        function fetch(url, { body = '', method = 'GET', headers = {}}) {
+            console.log(method);
+        }
+
+        fetch('http://example.com',{});
+        fetch('http://example.com');//error
+
+        //类型三,双重默认值
+        function getFetch(url, { mehtod = 'GET' } = {}) {
+            console.log(mehtod);
+        }
+
+        getFetch('http://example.com');//GET
+
+        //类型四
+        //默认参数位置
+        //默认参数位置一般在函数的末尾位置，这样比较容易看出，到底省略了哪些参数
+        //如果不在尾部的话，实际上这个参数是无法省略的
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性简洁表达</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //ES6允许直接写入变量和函数作为对象的属性和方法
+
+        var foo = "bar";
+        var baz = {foo};
+        baz //{foo: bar}
+
+        //等同于
+        var baz = {foo: foo}
+
+        function f(x, y) {
+            return {x, y};
+        }
+
+        //等同于
+
+        function f(x, y) {
+            return {x: x, y: y};
+        }
+
+        f(1, 2); //Objec {x: 1, y: 2}
+
+
+        //除了属性简写，function也可以简写
+
+        var o = {
+            method() {
+                return 'hello'
+            }
+        }
+
+        //等同于
+
+        var o  = {
+            method: function() {
+                return 'hello'
+            }
+        }
+
+
+
+        var Person = {
+            name: '张三',
+            birth,
+            hello() {
+                console.log('名字' +　this.name);
+            }
+        }
+
+        //用于返回值
+
+        function getPoint() {
+            var x = 1;
+            var y = 10;
+
+            return {x, y};
+        }
+
+        //用于commonJS模块输出
+
+        var ms = {};
+
+        function getItem (key) {
+            return key in ms ? ms[key] : null;
+        }
+
+        function setItem (key, value) {
+            ms[key] = value;
+        }
+
+        function clear() {
+            ms = {};
+        }
+
+
+        module.exports = { getItem, setItem, claer };
+
+        //等同于
+
+        module.exports = {
+            getItem,
+            setItem,
+            clear
+        }
+    </script>
+</body>
+</html>
