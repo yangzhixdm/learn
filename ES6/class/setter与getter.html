@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Setter与Getter</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        class Square {
+            constructor(){
+
+            }
+
+            set length(length){
+                console.log('setter');
+            }
+
+            get length(){
+                console.log('getter');
+            }
+        }
+
+        var t = new Square();
+        t.length;
+
+        //获取length属性，会调用length方法
+
+
+        //getter与setter定义在html属性的描述对象上
+        class CustomHtmlElement {
+            constructor(element) {
+                this.element = element;
+            }
+
+            get html() {
+                return this.element.innerHTML;
+            }
+
+            set html(value) {
+                this.element.innerHTML = value;
+            }
+        }
+
+        var descriptor = Object.getOwnPropertyDescriptor(
+            CustomHtmlElement.prototype, 'html'
+        );
+
+        console.log(descriptor);
+        console.log('get' in descriptor);
+        console.log('set' in descriptor);
+    </script>
+</body>
+</html>

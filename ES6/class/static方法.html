@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static</title>
+</head>
+<body>
+    <script type="text/javascript">
+        class Foo {
+            static classMethod() {
+                console.log('class classMethod');
+                return 'hello';
+            }
+        }
+
+        Foo.classMethod();//静态方法
+
+
+        class Bar extends Foo {
+
+        }
+
+
+        Bar.classMethod();//父类的静态方法可以被子类继承
+
+        class Father {
+            static classMethod() {
+                return 'hello';
+            }
+        }
+
+        class Son extends Father {
+            static classMethod() {
+                return super.classMethod() + ', too';
+            }
+        }
+
+        console.log(Son.classMethod());//静态方法可以用super调用
+    </script>
+</body>
+</html>

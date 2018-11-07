@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static属性</title>
+</head>
+<body>
+    <script type="text/javascript">
+        class Foo {
+
+        }
+
+        Foo.prop = 1;
+
+        console.log(Foo.prop);    //1
+
+
+        //ES7 静态属性提案
+
+        /*class Father {
+            static myStaticProp = 42;
+
+            constructor() {
+                console.log(Father.myStaticProp);
+            }
+        }
+
+        new Father();*/
+    </script>
+</body>
+</html>

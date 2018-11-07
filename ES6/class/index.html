@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        class Demo {
+            constructor(){
+                console.log('constructor');
+                this.state = {
+                    name: 'ddd1'
+                }
+            }
+
+            hanlder(){
+                console.log('handler');
+            }
+
+            //方法定义在prototype中
+            render(){
+                console.log('render');
+                console.log(this); //this指向 Demo 实例，带有一个constructor属性
+                console.log(this.state.name);
+            }
+        }
+
+        //Demo();不能不带new直接执行
+
+        const d = new Demo();
+        const {render } = d;
+
+        console.log(render);
+        //render(); //TypeError: Cannot read property 'state' of undefined
+
+        d.render();
+
+        function Demo1(){
+            this.state = {
+                name: "ddd2"
+            }
+        }
+
+        Demo1.prototype = {
+            render : function(){
+                console.log(this);//没有带constructor属性
+            }
+        }
+
+        var dd = new Demo1();
+        dd.render();
+
+    </script>
+</body>
+</html>
