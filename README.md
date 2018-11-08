@@ -40,7 +40,7 @@
 
 > 作用域链
 
-> csrf
+> [csrf](https://github.com/helloyangzhi/learn/issues/11)
 
 > xss
 
@@ -50,7 +50,7 @@
 
 > 垃圾回收机制
 
-> 箭头函数
+> [箭头函数](https://github.com/helloyangzhi/learn/blob/master/ES6/%E5%87%BD%E6%95%B0%E6%89%A9%E5%B1%95/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0.html)
 
 > [hash与history的区别](https://github.com/helloyangzhi/learn/issues/10)
 
