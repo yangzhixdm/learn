@@ -30,6 +30,8 @@
 
 > [Promise中的resolve与reject回调问题](https://github.com/helloyangzhi/learn/issues/9)
 
+> [splice与slice](https://github.com/helloyangzhi/learn/issues/13)
+
 > http请求
 
 > vue diff
