@@ -32,6 +32,8 @@
 
 > [splice与slice](https://github.com/helloyangzhi/learn/issues/13)
 
+> [Generator](https://github.com/helloyangzhi/learn/issues/15)
+
 > http请求
 
 > vue diff
