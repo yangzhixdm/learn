@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>状态机</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var ticking = true;
+
+        var clock = function() {
+            if(ticking) {
+                console.log('Tick');
+            }else{
+                console.log('Tock');
+            }
+
+            ticking = !ticking;
+        }
+
+        clock();
+        clock();
+        clock();
+        clock();
+
+
+        var clock = function* (_) {
+            while(true) {
+                yield _;
+                console.log('Tick');
+                yield _;
+                console.log('Tock');
+            }
+        }
+
+        var c = clock();
+        c.next();
+        c.next();
+        c.next();
+        c.next();
+        c.next();
+    </script>
+</body>
+</html>

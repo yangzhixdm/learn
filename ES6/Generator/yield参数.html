@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yield参数</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+    var x = 0;
+    function* foo() {
+        var a = yield ++x;
+        console.log(x);
+        console.log(a); 
+    }
+
+    var f = foo();
+    f.next();
+    f.next('params');
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>异步同步化表达</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function* loadUI() {
+            showLoadingScreen();
+            yield loadUIDataAsynchronous();
+            hideLoadingScreen();
+        }
+
+        var loader = loadUI();
+        loader.next();//加载UI
+
+        loader.next();//卸载UI
+
+    </script>
+</body>
+</html>
