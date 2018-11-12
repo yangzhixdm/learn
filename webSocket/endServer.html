@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ws demo end page</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <input type="button" value="send" id="send">
+        <div id="ws-demo">
+                
+    </div>
+    <script type="text/javascript">
+        
+
+        var CreateWebSocket = (function () {
+            return function (urlValue) {
+                if (window.WebSocket) return new WebSocket(urlValue);
+                if (window.MozWebSocket) return new MozWebSocket(urlValue);
+                return false;
+            }
+        })()
+
+        $("#send").on('click', function() {
+
+            // 实例化websoscket websocket有两种协议ws(不加密)和wss(加密)
+            var webSocket = CreateWebSocket("ws://127.0.0.1:4000");
+
+            webSocket.onopen = function (evt) {
+                // 一旦连接成功，就发送第一条数据
+                //webSocket.send({type: 'change','msg': "come from end"});
+                webSocket.send("come from end");
+            } 
+
+            webSocket.onmessage = function (evt) {
+                // 这是服务端返回的数据
+                document.getElementById('ws-demo').innerHTML = document.getElementById('ws-demo').innerHTML  + evt.data+ "<br/>";
+            }
+        });
+
+    </script>
+</body>
+</html>
