@@ -58,6 +58,8 @@
 
 > [hash与history的区别](https://github.com/helloyangzhi/learn/issues/10)
 
+> [How browsers work](http://taligarsiel.com/Projects/howbrowserswork1.htm)
+
 > 绑定事件删除问题
 
 > 前端工程缓存
