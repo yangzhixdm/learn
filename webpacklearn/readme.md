@@ -5,7 +5,7 @@
 
 ### proxy
 
-#### 关于webpack-dev-server配置`
+#### 关于webpack-dev-server配置
 
 ``` javascript
 devServer: {
