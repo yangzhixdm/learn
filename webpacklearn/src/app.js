@@ -12,10 +12,3 @@ $.get('/comments/hotflow', {
 }, function(data) {
     console.log("data:", data);
 })
-
-
-$.post('/NBaasSrv/GetMchInfo', {}, function(data) {
-    console.log("data:", data);
-})
-
-
