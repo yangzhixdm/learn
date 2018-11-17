@@ -1,9 +1,4 @@
-### webpack
-
-### commonJs module
-
-
-### proxy
+### webpack proxy
 
 #### 关于webpack-dev-server配置
 
