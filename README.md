@@ -34,6 +34,8 @@
 
 > [Generator](https://github.com/helloyangzhi/learn/issues/15)
 
+> [关于异步与同步的一点想法](https://github.com/helloyangzhi/learn/issues/16)
+
 > http请求
 
 > vue diff
