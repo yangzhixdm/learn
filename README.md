@@ -46,7 +46,9 @@
 
 > [How browsers work](http://taligarsiel.com/Projects/howbrowserswork1.htm)
 
-> [git](https://github.com/helloyangzhi/learn/issues/21)
+> [git](https://github.com/helloyangzhi/learn/issues/20)
+
+> [关于跨域的问题](https://github.com/helloyangzhi/learn/issues/5)
 
 > http请求
 
@@ -81,5 +83,3 @@
 > 正则表达式
 
 > 浏览器工作原理
-
-> 跨域解决方案
