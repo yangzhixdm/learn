@@ -50,6 +50,8 @@
 
 > [关于跨域的问题](https://github.com/helloyangzhi/learn/issues/5)
 
+> [浏览器工作原理](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
+
 > http请求
 
 > vue diff
@@ -81,5 +83,3 @@
 > js词法分析
 
 > 正则表达式
-
-> 浏览器工作原理
