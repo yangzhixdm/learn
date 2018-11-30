@@ -52,6 +52,8 @@
 
 > [浏览器工作原理](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
 
+> [事件循环与任务循环以及流程控制](https://github.com/helloyangzhi/learn/issues/23)
+
 > http请求
 
 > vue diff
