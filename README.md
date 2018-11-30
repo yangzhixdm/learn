@@ -1,6 +1,6 @@
 ### 前端笔记
 
-> [前端体系]()
+> [前端体系](https://raw.githubusercontent.com/helloyangzhi/learn/master/front-end-development.jpg)
 
 > [sublime text 配置](https://github.com/helloyangzhi/blogs/issues/1)
 
