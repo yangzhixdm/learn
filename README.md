@@ -54,6 +54,8 @@
 
 > [事件循环与任务循环以及流程控制](https://github.com/helloyangzhi/learn/issues/23)
 
+> [seajs源码流程分析](https://github.com/helloyangzhi/learn/issues/21)
+
 > http请求
 
 > vue diff
