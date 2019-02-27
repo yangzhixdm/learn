@@ -2,7 +2,33 @@
 
 > [前端体系](https://raw.githubusercontent.com/helloyangzhi/learn/master/front-end-development.jpg)
 
+> [something do not know](https://github.com/helloyangzhi/learn/issues/27)
+
+> [关于https的几个问题](https://github.com/helloyangzhi/learn/issues/4)
+
+> [关于跨域的问题](https://github.com/helloyangzhi/learn/issues/5)
+
+> [组件通信的一些想法](https://github.com/helloyangzhi/learn/issues/6)
+
+> [关于异步与同步的一点想法](https://github.com/helloyangzhi/learn/issues/16)
+
+> [How browsers work](http://taligarsiel.com/Projects/howbrowserswork1.htm)
+
+> [关于Flux中的actoin与dispatch ](https://github.com/helloyangzhi/learn/issues/7)
+
+> [redux与react-redux笔记](https://github.com/helloyangzhi/learn/issues/8)
+
+> [Promise中的resolve与reject回调问题](https://github.com/helloyangzhi/learn/issues/9)
+
+> [事件循环与任务循环以及流程控制](https://github.com/helloyangzhi/learn/issues/23)
+
+> [seajs源码流程分析](https://github.com/helloyangzhi/learn/issues/21)
+
+> [函数式编程](https://github.com/helloyangzhi/learn/issues/24)
+
 > [sublime text 配置](https://github.com/helloyangzhi/blogs/issues/1)
+
+> [关于跨域的问题](https://github.com/helloyangzhi/learn/issues/5)
 
 > [微任务与宏任务](https://juejin.im/post/5b73d7a6518825610072b42b)
 
@@ -18,23 +44,9 @@
 
 > [::before vs :before](https://css-tricks.com/to-double-color-or-not-do-double-colon/)
 
-> [关于https的几个问题](https://github.com/helloyangzhi/learn/issues/4)
-
-> [关于跨域的问题](https://github.com/helloyangzhi/learn/issues/5)
-
-> [组件通信的一些想法](https://github.com/helloyangzhi/learn/issues/6)
-
-> [关于Flux中的actoin与dispatch ](https://github.com/helloyangzhi/learn/issues/7)
-
-> [redux与react-redux笔记](https://github.com/helloyangzhi/learn/issues/8)
-
-> [Promise中的resolve与reject回调问题](https://github.com/helloyangzhi/learn/issues/9)
-
 > [splice与slice](https://github.com/helloyangzhi/learn/issues/13)
 
 > [Generator](https://github.com/helloyangzhi/learn/issues/15)
-
-> [关于异步与同步的一点想法](https://github.com/helloyangzhi/learn/issues/16)
 
 > [前端工程缓存](https://www.zhihu.com/question/20790576/answer/32602154)
 
@@ -44,21 +56,9 @@
 
 > [hash与history的区别](https://github.com/helloyangzhi/learn/issues/10)
 
-> [How browsers work](http://taligarsiel.com/Projects/howbrowserswork1.htm)
-
 > [git](https://github.com/helloyangzhi/learn/issues/20)
 
-> [关于跨域的问题](https://github.com/helloyangzhi/learn/issues/5)
-
 > [浏览器工作原理](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
-
-> [事件循环与任务循环以及流程控制](https://github.com/helloyangzhi/learn/issues/23)
-
-> [seajs源码流程分析](https://github.com/helloyangzhi/learn/issues/21)
-
-> [函数式编程](https://github.com/helloyangzhi/learn/issues/24)
-
-> [something do not know](https://github.com/helloyangzhi/learn/issues/27)
 
 > [BFC](https://github.com/helloyangzhi/learn/issues/28)
 
