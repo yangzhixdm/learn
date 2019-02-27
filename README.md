@@ -56,6 +56,12 @@
 
 > [seajs源码流程分析](https://github.com/helloyangzhi/learn/issues/21)
 
+> [函数式编程](https://github.com/helloyangzhi/learn/issues/24)
+
+> [something do not know](https://github.com/helloyangzhi/learn/issues/27)
+
+> [BFC](https://github.com/helloyangzhi/learn/issues/28)
+
 > http请求
 
 > vue diff
