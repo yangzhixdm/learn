@@ -2,6 +2,8 @@
 
 > [前端体系](https://raw.githubusercontent.com/helloyangzhi/learn/master/front-end-development.jpg)
 
+> [关于http请求数一些问题](https://github.com/helloyangzhi/learn/issues/29)
+
 > [something do not know](https://github.com/helloyangzhi/learn/issues/27)
 
 > [关于https的几个问题](https://github.com/helloyangzhi/learn/issues/4)
