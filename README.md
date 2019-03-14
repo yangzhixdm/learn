@@ -70,9 +70,9 @@
 
 > [Fiddler抓取Https请求问题](https://github.com/helloyangzhi/learn/issues/32)
 
-> http请求
+> [VirtualDOM与diff](https://github.com/answershuto/learnVue/blob/master/docs/VirtualDOM%E4%B8%8Ediff(Vue%E5%AE%9E%E7%8E%B0).MarkDown)
 
-> [vue diff](https://github.com/answershuto/learnVue/blob/master/docs/VirtualDOM%E4%B8%8Ediff(Vue%E5%AE%9E%E7%8E%B0).MarkDown)
+> http请求
 
 > nginx
 
