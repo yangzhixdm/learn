@@ -72,6 +72,8 @@
 
 > [VirtualDOM与diff](https://github.com/answershuto/learnVue/blob/master/docs/VirtualDOM%E4%B8%8Ediff(Vue%E5%AE%9E%E7%8E%B0).MarkDown)
 
+> [high-performance-animations](https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
+
 > http请求
 
 > nginx
