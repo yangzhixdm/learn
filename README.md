@@ -20,12 +20,6 @@
 
 > [hash与history的区别](https://github.com/helloyangzhi/learn/issues/10)
 
-### 前端
-
-> [前端体系](https://raw.githubusercontent.com/helloyangzhi/learn/master/front-end-development.jpg)
-
-> [seajs源码流程分析](https://github.com/helloyangzhi/learn/issues/21)
-
 > [Presentational and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
 
 ### 前端工程
@@ -35,6 +29,8 @@
 > [关于https的几个问题](https://github.com/helloyangzhi/learn/issues/4)
 
 > [关于跨域的问题](https://github.com/helloyangzhi/learn/issues/5)
+
+> [seajs源码流程分析](https://github.com/helloyangzhi/learn/issues/21)
 
 ### JavaScript
 
@@ -81,6 +77,8 @@
 > [high-performance-animations](https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
 
 ### other
+
+> [前端体系](https://raw.githubusercontent.com/helloyangzhi/learn/master/front-end-development.jpg)
 
 > [Something easily confused](https://github.com/helloyangzhi/learn/issues/27)
 
