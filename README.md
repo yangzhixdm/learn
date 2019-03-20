@@ -24,9 +24,9 @@
 
 ### 前端工程
 
-> [关于http请求数一些问题](https://github.com/helloyangzhi/learn/issues/29)
+> [关于http请求连接数限制问题](https://github.com/helloyangzhi/learn/issues/29)
 
-> [关于https的几个问题](https://github.com/helloyangzhi/learn/issues/4)
+> [关于https的核心问题](https://github.com/helloyangzhi/learn/issues/4)
 
 > [关于跨域的问题](https://github.com/helloyangzhi/learn/issues/5)
 
