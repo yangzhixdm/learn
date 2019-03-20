@@ -16,6 +16,8 @@
 
 > [组件通信的一些想法](https://github.com/helloyangzhi/learn/issues/6)
 
+> [Vue nextTick渲染机制](https://github.com/helloyangzhi/learn/issues/34)
+
 > [vue组件挂载主流程](https://github.com/helloyangzhi/learn/issues/33)
 
 > [关于异步与同步的一点想法](https://github.com/helloyangzhi/learn/issues/16)
