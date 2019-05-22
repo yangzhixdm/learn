@@ -1,5 +1,8 @@
 ## 前端笔记
 
+### React
+[React transaction](https://oychao.github.io/2017/09/25/react/16_transaction/)
+
 ### Vue
 
 > [组件通信的一些想法](https://github.com/helloyangzhi/learn/issues/6)
