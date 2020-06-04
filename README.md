@@ -5,6 +5,8 @@
 
 ### Vue
 
+> Vue 源码学习
+
 > [组件通信的一些想法](https://github.com/helloyangzhi/learn/issues/6)
 
 > [Vue nextTick渲染机制](https://github.com/helloyangzhi/learn/issues/34)
