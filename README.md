@@ -126,3 +126,25 @@
 > js词法分析
 
 > 正则表达式
+
+### 其他
+
+> [从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理](https://juejin.im/post/5a6547d0f265da3e283a1df7?utm_medium=fe&utm_source=weixinqun)
+
+> [腾讯新闻React同构直出优化实践](https://github.com/lcxfs1991/blog/issues/10)
+
+> [React同构直出优化总结](https://github.com/joeyguo/blog/issues/9)
+
+> [Node直出理论与实践总结](https://github.com/joeyguo/blog/issues/8)
+
+> [网易云音乐 react服务端渲染示例](https://github.com/meibin08/NeteaseCloudMusic-SSR)
+
+> [脚本错误量极致优化-监控上报与Script error](https://github.com/joeyguo/blog/issues/13)
+
+> [React移动web极致优化](https://github.com/lcxfs1991/blog/issues/8)
+
+> [兴趣部落的Web同构直出分享](https://wetest.qq.com/lab/view/348.html)
+
+> [一步一步架构 react 服务器渲染同构框架](https://blog.csdn.net/itheima_Wujie/article/details/78683245)
+
+> [从零开始搭建vue-ssr系列](https://segmentfault.com/a/1190000009352740)
