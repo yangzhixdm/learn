@@ -1,8 +1,5 @@
 ## 前端笔记
 
-### React
-[React transaction](https://oychao.github.io/2017/09/25/react/16_transaction/)
-
 ### Vue
 
 > Vue 源码学习
@@ -36,6 +33,10 @@
 > [关于跨域的问题](https://github.com/helloyangzhi/learn/issues/5)
 
 > [seajs源码流程分析](https://github.com/helloyangzhi/learn/issues/21)
+
+### React
+[React transaction](https://oychao.github.io/2017/09/25/react/16_transaction/)
+[react 学习](https://github.com/yangzhixdm/learn/issues/52)
 
 ### JavaScript
 
