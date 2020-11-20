@@ -83,6 +83,7 @@
 > [high-performance-animations](https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
 
 ### other
+> [ 一些记录 ](https://github.com/yangzhixdm/learn/issues/53)
 
 > [前端体系](https://raw.githubusercontent.com/helloyangzhi/learn/master/front-end-development.jpg)
 
