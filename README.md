@@ -83,6 +83,13 @@
 > [high-performance-animations](https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
 
 ### other
+
+> [前端开发指南](https://github.com/xitu/front-end-handbook-2017)
+
+> [JavaScript Algorithms and Data Structures](https://github.com/trekhleb/javascript-algorithms)
+
+> [What the f*ck JavaScript?](https://github.com/denysdovhan/wtfjs/blob/master/README.md)
+
 > [ 一些记录 ](https://github.com/yangzhixdm/learn/issues/53)
 
 > [前端体系](https://raw.githubusercontent.com/helloyangzhi/learn/master/front-end-development.jpg)
@@ -150,3 +157,5 @@
 > [一步一步架构 react 服务器渲染同构框架](https://blog.csdn.net/itheima_Wujie/article/details/78683245)
 
 > [从零开始搭建vue-ssr系列](https://segmentfault.com/a/1190000009352740)
+
+> [大佬笔记](https://github.com/n0ruSh/blogs)
