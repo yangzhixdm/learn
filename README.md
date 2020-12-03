@@ -106,6 +106,8 @@
 
 > [Fiddler抓取Https请求问题](https://github.com/helloyangzhi/learn/issues/32)
 
+> [JS限流](https://github.com/yangzhixdm/learn/issues/54)
+
 > http请求
 
 > nginx
