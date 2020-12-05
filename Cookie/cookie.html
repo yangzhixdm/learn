@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function setCookie(name,value) { 
+            var Days = 30; 
+            var exp = new Date(); 
+            exp.setTime(exp.getTime() + Days*24*60*60*1000); 
+            document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString() + ";path=/"; 
+        }
+
+        setCookie("nmch_id","gbd9MddZWazRKCjBkt")
+        setCookie("ntmulkey","gbd9MddZWazRKCjBkt1547808088")
+        setCookie("ntmulu","helloyangzhi@foxmail.com")
+    </script>
+</body>
+</html>

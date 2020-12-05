@@ -30,4 +30,14 @@ router.post('/login', (ctx) => {
     };
 });
 
+
+//可以考虑封装convert一下返回数据
+router.get('/testredirect', (ctx) => {
+
+    ctx.status = 301;
+    ctx.redirect('/login');
+});
+
+
+
 module.exports = router;

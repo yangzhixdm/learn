@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        function LazyMan (name) {
+            return new _LazyMan(name);
+        }
+
+        function _LazyMan (name) {
+
+            setTimeout(function() {
+                console.log('Hi This is ' + name)
+            },0);
+        }
+
+        _LazyMan.prototype = {
+            task: [],
+            eat (name) {
+                console.log('Eat ' + name)
+                return this;
+            },
+            sleepFirst (time) {
+                console.log('Wake up after ' + time)
+                return this;
+            },
+            next() {
+
+            }
+        }
+
+
+
+        //等待5秒
+        //Wake up after 5
+        //Hi This is Hank!
+        //Eat supper
+        LazyMan("Hank").sleepFirst(5).eat("supper");
+    </script>    
+</body>
+</html>

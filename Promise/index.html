@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise ployfill</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        /**
+         * 1 setTimeout 用来处理流程控制，让then方法先运行，后面再执行resolve方法，then方法只是添加了一个回调引用
+         * @param {Function} callback function
+         */
+        function Promise(fn){
+            console.log('Promise');
+
+            var self = this;
+            this.callbackList = [];
+
+            // this.then = function(onFulled) {
+            //     console.log('then');
+
+            //     this.callbackList.push(onFulled);
+            //     return this;
+            // }
+
+            resolve = function(v){
+                console.log('resolve');
+                for(var i = 0 ; i < self.callbackList.length; i++) {
+                    self.callbackList[i](v);
+                }
+            }
+
+            fn(resolve);
+        }
+
+
+        Promise.prototype.then = function(onFulled) {
+
+            //连接之前旧Promise与目前新的Promise的状态
+
+            //需要返回一个新的promise
+
+            return new Promise(function(resolve){
+
+            });
+
+            console.log('then');
+            this.callbackList.push(onFulled);
+            return this;
+        }
+
+        var p = new Promise(function(resolve){
+            console.log('ajax');
+
+            //将resolve中执行回调的逻辑放置到JS任务队列末尾，以保证在resolve执行时，then方法的回调函数已经注册完成.
+            setTimeout(function(){ //既然用了这个，就一定会在下一个事件循环才触发
+                console.log('do somethind');
+                resolve('value:123');
+            },1000);
+        });
+
+        p.then(function(v){
+            console.log(v);
+            console.log('onFulled');
+        }).then(function(v){
+            console.log(v);
+            console.log('onFulled2');
+        });
+
+        //如果需要返回一个新的Promise怎么办？ 直接new一个新的？
+
+    </script>
+</body>
+</html>

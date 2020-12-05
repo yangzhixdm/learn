@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nest lexical</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /**
+         * 
+         */
+        function test(fn) {
+            var t = "2";
+            function g(){
+                console.log(t);
+            }
+
+            g();
+        }
+
+
+        function sub()　{
+            debugger;
+            console.log(t);
+            console.log('sub');
+        }
+
+
+        test(sub);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <style type="text/css">
+        .container{
+            display: flex;
+            background: #ccc;
+            padding: 10px;
+        }
+
+        .column{
+            height: 50px;
+            background: #fff;
+        }
+        .column:first-child{
+            width: 400px;
+        }
+
+        .column:nth-child(2),.column:nth-child(3),.column:nth-child(4),.column:nth-child(5) {
+            flex: 1;
+            margin-left: 10px;
+        }
+
+        button {
+             color: magenta;
+             transition: color 200ms ease-in 500ms;
+        }
+        button:hover{
+            color: rebeccapurple;
+            transition: color 200ms ease-out 500ms;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">column1</div>
+        <div class="column">column2</div>
+        <div class="column">column3</div>
+        <div class="column">column4</div>
+        <div class="column">column5</div>
+    </div>
+
+    <button>1321131312sdfdsaf</button>
+</body>
+</html>

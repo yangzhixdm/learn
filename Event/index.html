@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addEvent</title>
+</head>
+<body>
+    <input type="button" value="test" id="test"/>
+    <script type="text/javascript" src="addEvent.js"></script>
+    <script type="text/javascript">
+        var btn = document.getElementById("test");
+        addEvent(btn,"click",function(){
+            console.log('test1');
+        });
+        addEvent(btn,"click",function(){
+            console.log('test1');
+        });
+
+        removeEvent(btn,"click");
+    </script>
+</body>
+</html>

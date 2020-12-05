@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 200px;height: 200px;">
+        <div style="display: flex;align-items: center;justify-content: center;">dddddddd</div>
+    </div>
+
+    <!--
+    margin的百分比值是以父元素的宽度作为解析基准的。即使是margin-top或者margin-bottom
+    -->
+    <div style="width: 200px;height: 200px;background: red;border:1px solid red;">
+        <div style="background:yellow;margin:50% auto 0;transform:translateY(-50%);">dddddddd</div>
+    </div>
+</body>
+</html>

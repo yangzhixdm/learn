@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>middleware pattern</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const app = {
+            fns: [],
+            
+            callback (ctx) {
+                console.log(ctx)
+            },
+
+            use (fn) {
+                this.fns.push(fn);
+            },
+
+            go (ctx) {
+                var that = this;
+                const next = () =>　{
+                    if(that.fns.length > 0) {
+                        var fn = that.fns.shift();
+                        fn(ctx,next);
+                    }else{
+                        that.callback(ctx);
+                    }
+                }
+
+                next();
+            }
+
+            // go (ctx) {
+            //     let index = 0;
+            //     const next = () =>　{
+            //       index ++;
+            //     }
+            //     this.fns.map((fn,i) => {
+            //       if(index == i) fn(ctx,next);
+            //     });
+            //     index === this.fns.length && this.callback(ctx);
+            // }
+        }
+
+        app.use((ctx, next) => {
+            ctx.a = 2
+            next()
+        })
+
+        app.use((ctx, next) => {
+            ctx.b = 2
+            next()
+        })
+
+
+        // ... 任意调用 use 插入中间件
+
+        app.go({}) // => 启动执行，最后会调用 callback 打印 => { name: 'Lucy', age: 12  }
+
+        app.use((ctx, next) => {
+          ctx.c = 3
+          next()
+        })
+
+
+        app.go({}) // => 启动执行，最后会调用 callback 打印 => { name: 'Lucy', age: 12  }
+        
+        /**
+         * 1 存储传入的中间件
+         * 2 next方法调用下一个
+         * 3 最后一个为callback方法
+         * 4 与流程控制的区别
+         */
+    </script>
+</body>
+</html>

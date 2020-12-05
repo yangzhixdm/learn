@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Define Property</title>
+</head>
+<body>
+    <script type="text/javascript" src="vue.js"></script>
+    <div id="app">
+        <!-- <el-input v-model="name"></el-input> -->
+        <input type="text" v-model="name"/>
+        <!--
+            <el-input :value="name" v-on:input="name = arguments[0]"></el-input>
+        -->
+    </div>
+    <script type="text/javascript">
+        //给组件添加 v-model 属性时，默认会把 value 作为组件的属性，然后把 'input' 值作为给组件绑定事件时的事件名
+        Vue.component('el-input',{
+            template: '<div><input ref="input" :value="value" type="text" @input="doThis"/>{{value}}</div>',
+            props:['value'],
+            methods: {
+                doThis: function() {
+                    this.$emit('input', event.target.value)
+                }
+            },
+            mounted: function(){
+                console.log(this.value);
+                var input = this.$refs.input;
+                input.value = '222';
+            }
+        });
+
+        var vm = new Vue({
+            el: "#app",
+            data: function() {
+                return {
+                    name : 111
+                }   
+            }
+        })
+    </script>
+</body>
+</html>

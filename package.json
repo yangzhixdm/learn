@@ -19,7 +19,8 @@
   "homepage": "https://github.com/helloyangzhi/learn#readme",
   "devDependencies": {
     "chalk": "^2.4.1",
-    "opn": "^5.4.0"
+    "opn": "^5.4.0",
+    "thunkify": "^2.1.2"
   },
   "dependencies": {
     "ejs": "^2.6.1",

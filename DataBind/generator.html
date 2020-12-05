@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function *foo(x){
+            console.log(x);
+            yield x++;
+            console.log(x);
+        }
+
+
+        var g = foo(1);
+        g.next();
+        console.log('dd');
+        g.next();
+    </script>
+</body>
+</html>

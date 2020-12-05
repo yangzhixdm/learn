@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Flow Control</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        function LazyMan(name) {
+
+            return new _lazyMan(name);
+        }
+
+        function _lazyMan(name) {
+            this.tasks = [];
+
+            var task = function(){
+                console.log('Hi! This is ' + name);
+            };
+
+            this.tasks.push(task);
+
+            var self = this;
+            setTimeout(function(){
+                var task = self.tasks.shift();
+                task && task();
+            },0);
+        }
+
+        _lazyMan.prototype = {
+            eat: function(name) {
+                var task = function(){
+                    console.log('eat' + name);
+                };
+
+                this.tasks.push(task);
+                var self = this;
+                setTimeout(function(){
+                    var task = self.tasks.shift();
+                    task && task();
+                },0);
+
+                return this;
+            },
+            sleep: function(seconds) {
+                var task = function(){
+                    console.log('Wake up after ' + seconds);
+                };
+
+                this.tasks.push(task);
+                var self = this;
+                setTimeout(function(){
+                    var task = self.tasks.shift();
+                    task && task();
+                },seconds);
+
+                return this;
+            },
+            sleepFirst: function(seconds) {
+                var task = function(){
+                    console.log('Wake up after ' + seconds);
+                };
+
+                this.tasks.unshift(task);
+                var self = this;
+                setTimeout(function(){
+                    var task = self.tasks.shift();
+                    task && task();
+                },seconds);
+
+                return this;
+            }
+        }
+
+        //执行与添加要区分开
+        //setTimeout
+        //利用任务机制
+
+        //LazyMan("Hank").sleep(10).eat('dinner');
+ 
+        //LazyMan("Hank").eat("dinner").eat("supper");
+
+        LazyMan("Hank").sleepFirst(5).eat("supper");
+
+    </script>
+</body>
+</html>

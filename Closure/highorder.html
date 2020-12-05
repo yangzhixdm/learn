@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Closure</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //demo 1
+        var isEven = function (n) {
+            return n%2 === 0;
+        }
+
+        isEven.add = function()　{
+            console.log('add');
+        }
+
+        function complement(PRED) {
+            return function() {
+                //return !PRED.apply(null, arguments);
+                return PRED.add;
+            }
+        }
+
+        var isOdd = complement(isEven);
+
+        console.log(isOdd(1));
+        console.log(isOdd(2));
+
+        // isEven = function() { //此处相当于是重新定义了一个新的变量
+        //     return false;
+        // }
+
+        isEven.add = function()　{
+            console.log('xxx');
+        }
+
+        console.log(isOdd(1));
+
+
+        //demo2
+       
+        // var o = {a: '1'};
+
+        // function complement(PRED) {
+        //     return function() {
+        //         return PRED;
+        //     }
+        // }
+
+        // var isOdd = complement(o);
+
+        // console.log(isOdd());
+
+        // o['name'] = 'ddd';
+
+        // console.log(isOdd()); 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <style type="text/css">
+        body,html,p{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            font-size: 10px;
+            color: #fff;
+            font-family: 'microsoft yahei';
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .wrapper{
+            display: flex;
+            margin-bottom: 95px;
+        }
+
+        .container{
+            display: block;
+            max-width: 750px;
+            justify-content: center;
+            align-items:center;
+            margin: 0 auto;
+        }
+        .description{
+            padding-top: 80px;
+            padding-left: 40px;
+            background-image: url(./images/bg.jpg);
+            padding-bottom: 145px;
+        }
+
+        .description .top-icon{
+            width: 40px;
+            height: 43px;
+            margin-bottom: 15px;
+        }
+
+        .description .tips{
+            font-size: 2rem;
+            color: #FFFFFF;
+            padding-bottom: 24px;
+        }
+
+        .description .content{
+            font-size: 1.4rem;
+            color: rgba(255,255,255,0.90);
+        }
+        .description .content p:nth-child(2){
+            padding-top: 40px;
+        }
+
+        .description .content p span{
+            line-height: 2.0rem;
+        }
+
+        .container .remark{
+            width: 230px;
+            margin: 0 auto;
+            margin-top: -88px;
+        }
+        .container .remark img{
+            width: 100%;
+        }
+
+        .item{
+            margin-top: 65px;
+            padding:30px;
+        }
+
+        .title-wrap{
+            margin-top: 85px;
+        }
+
+        .title-wrap .desc{
+            font-size: 2.2rem;
+            color: rgba(0,0,0,0.90);
+            letter-spacing: 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title-wrap .desc:before{
+            content: "";
+            background-image: url(./images/left.jpg);
+            height: 7px;
+            width: 35px;
+            margin-right: 20px;
+            background-size: 35px;
+        }
+
+        .title-wrap .desc:after{
+            content: "";
+            background-image: url(./images/right.jpg);
+            height: 7px;
+            width: 35px;
+            margin-left: 20px;
+            background-size: 35px;
+        }
+        .ex-item {
+            margin: 0 30px;
+        }
+        .header-wrap {
+            display: flex;
+            align-items: center;
+            color: #000;
+            height: 38px;
+            margin: 65px 0 25px;
+        }
+        .header-wrap > p:nth-child(1) {
+            margin-left: 8px;
+        }
+
+        .header-wrap .btn {
+            width: 70px;
+            height: 27px;
+        }
+
+        .header-wrap .content{
+            margin-left: 16px;
+            flex: 1;
+        }
+        .header-wrap .content p:first-child{
+            font-size: 1.7rem;
+            color: rgba(0,0,0,0.90);
+        }
+
+        .header-wrap .content p:last-child{
+            font-size: 1.4rem;
+            color: rgba(0,0,0,0.50);
+        }
+
+        .header-wrap .btn button{
+            border: 0;
+            background: #F7F7F7;
+            border-radius: 13.5px;
+            display: block;
+            width: 68px;
+            height: 27px;  
+            opacity: 0.5;
+            font-size: 1.3rem;
+            color: #000000;
+        }
+        .weight-list{
+            overflow: hidden;
+        }
+        .weight-item{
+            float: left;
+            width: 50%;
+            color: #000;
+            padding-bottom: 45px;
+            font-size: 14px;
+            color: rgba(0,0,0,0.50);
+        }
+        .weight-item .title-line{
+            display: flex;
+            font-size: 1.6rem;
+            align-items: center;
+            color: rgba(0,0,0,0.90);
+        }
+        .weight-item .icon{
+            background: url(./images/weight.png);
+            height: 17px;
+            width: 17px;
+            margin-right: 8px;
+        }
+
+        .tips-info{
+            font-size: 1.4rem;
+            color: rgba(0,0,0,0.30);
+            letter-spacing: 0;
+            text-align: center;
+            padding: 0 30px;
+        }
+        
+        .step-list{
+            color: #000;
+            font-size: 1.4rem;
+            color: rgba(0,0,0,0.50);
+        }
+        .step-list .step-item{
+            margin-bottom: 48px;
+        }
+        .step-item p:first-child{
+            font-size: 1.6rem;
+            color: rgba(0,0,0,0.90);
+        }
+
+        .step-item p:nth-child(2){
+            margin-bottom: 24px;
+        }
+
+        .submit-bnt{
+            width: 140px;
+            height: 40px;
+            border: 1px solid #E8B647;
+            border-radius: 2px;
+            background: #fff;
+            font-size: 16px;
+            color: #E8B647;
+            margin: 0 auto;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="description">
+                <p class="top-icon"><img src="./images/top-icon.jpg"/></p>
+                <p class="tips">小账本，你的轻松经营小助手</p>
+                <div class="content">
+                    <p>
+                        <span>生意太忙，如何快速对账？</span><br/>
+                        <span>多个店员，怎样协调收款？</span><br/>
+                        <span>哪里才能找到一套贴心省力的经营管理工具？</span>
+                    </p>
+                    <p>
+                        <span>收款小账本，专为二维码收款商家量身打造。</span><br/>
+                        <span>用上小账本，轻松收款，智慧经营。</span>
+                    </p>
+                </div>
+            </div>
+            <div class="remark">
+                <img src="./images/image1.jpg"/>
+            </div>
+            <div class="item title-wrap">
+                <p class="desc">小账本功能介绍</p>
+            </div>
+            <div class="ex-list">
+                <div class="ex-item">
+                    <div class="header-wrap">
+                        <p><img height="38" src="./images/icon.png"/></p>
+                        <div class="content">
+                            <p>收款记录</p>
+                            <p>自动记账，随时查看</p>
+                        </div>
+                        <p class="btn">
+                            <button>试用</button>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./images/demo.jpg"/>
+                    </div>
+                </div>
+                <div class="ex-item">
+                    <div class="header-wrap">
+                        <p><img height="38" src="./images/icon.png"/></p>
+                        <div class="content">
+                            <p>收款记录</p>
+                            <p>自动记账，随时查看</p>
+                        </div>
+                        <p class="btn">
+                            <button>试用</button>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./images/demo.jpg"/>
+                    </div>
+                </div>
+                <div class="ex-item">
+                    <div class="header-wrap">
+                        <p><img height="38" src="./images/icon.png"/></p>
+                        <div class="content">
+                            <p>收款记录</p>
+                            <p>自动记账，随时查看</p>
+                        </div>
+                        <p class="btn">
+                            <button>试用</button>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./images/demo.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="weight-list">
+                    <div class="weight-item">
+                        <p class="title-line"><span class="icon"></span>顾客留言</p>
+                        <p>即时互动，增进沟通</p>
+                    </div>
+                    <div class="weight-item">
+                        <p class="title-line"><span class="icon"></span>官方收款码</p>
+                        <p>官方物料，安全收款</p>
+                    </div>
+                    <div class="weight-item">
+                        <p class="title-line"><span class="icon"></span>商家公告</p>
+                        <p>一键发布，轻松公告</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tips-info">
+                *部分功能处于测试阶段，仅对部分商家开放，如需体验，详询客服。
+            </div>
+            <div class="item title-wrap">
+                <p class="desc">如何找到小账本</p>
+            </div>
+            <div class="item step-list">
+                <div class="step-item">
+                    <p>1、公众号“微信收款助手”</p>
+                    <p>关注公众号“微信收款助手” → 点击公众号菜单栏“小账本”</p>
+                    <p>
+                        <img width="315" src="./images/step.jpg">
+                    </p>
+                </div>
+                <div class="step-item">
+                    <p>2、微信收付款入口</p>
+                    <p>微信右上角+ → 点击收付款 → 进入二维码收款 → 点进下方“收款小账本”</p>
+                </div>
+                <div class="step-item">
+                    <p>3、微信搜索“收款小账本”</p>
+                    <p> 进入小账本后，推荐点击页面右上角的“...”-“添加到我的小程序”</p>
+                </div>
+            </div>
+            <div class="">
+                <button class="submit-bnt">立即开启</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
